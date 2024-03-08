@@ -52,7 +52,11 @@ input[type="text"]{
     padding: 0.6rem;
 }
 
-input[type="submit"] {
+input[type="text"]:focus-visible{
+    outline:black auto 1px;
+}
+
+button{
     padding: 0 1rem;
     border: none;
     background: black;
@@ -61,3 +65,9 @@ input[type="submit"] {
     font-weight: bold;
     letter-spacing: 1.2px;
     }
+
+button:hover {
+    cursor:pointer;
+    background:white;
+    color:black;
+}
