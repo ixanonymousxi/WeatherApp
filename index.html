@@ -19,9 +19,13 @@
             <div class="weather-wrapper">
                 <img src="./images/thermometer.png">
                 <h1>Weather App</h1>
+                <div class="weather-info-wrapper">
+                    <img src="./images/thermometer.png">
+                    <h2 id="degrees">40° F</h2>
+                </div>
                 <form>
-                    <input type="text" placeholder="Enter your city, state, or zip code." id="location" name="location">
-                    <button type="button" onClick="getWeather()">Check Weather</button>
+                    <input type="text" placeholder="Enter your city or zip code." id="location" name="location">
+                    <button type="button" onClick="checkWeatherButton()">Check Weather</button>
                 </form>
             </div>
         </div>

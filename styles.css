@@ -27,7 +27,7 @@ body{
 .weather-wrapper{
     display:flex;
     justify-content: center;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .weather-wrapper img{
@@ -41,6 +41,31 @@ body{
     font-size: 4rem;
     width:100%;
 }
+
+.weather-info-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 35%;
+    gap: 20px;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 35px;
+    border: solid grey 2px;
+}
+
+.weather-info-wrapper h2{
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:500;
+}
+
+.weather-info-wrapper img{
+    width:28%;
+}
+
 
 form{
     display: flex;
