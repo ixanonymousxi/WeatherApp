@@ -1,9 +1,9 @@
 
-function checkWeatherButton(){
+async function checkWeatherButton(){
     const location = document.querySelector('#location').value;
-    const weatherData = getWeather(location);
+    const weatherData = await getWeather(location);
 
-    console.log(weatherData);
+    //console.log(weatherData);
 
     displayWeather(weatherData);
 
@@ -12,7 +12,7 @@ function checkWeatherButton(){
 async function getWeather(location){
 
     const apiCall = 'http://api.weatherapi.com/v1/current.json?key=9cf0a0f32bfc47a2a45145029232910&q=' + location + '&aqi=no';
-    fetch(apiCall, {
+    const apiCallReturn = fetch(apiCall, {
         mode: 'cors'
     })
     .then(function (response) {
@@ -26,6 +26,8 @@ async function getWeather(location){
     .catch(function (error){
         console.log("Uh oh. Location not found, please check for any typing mistake or try another location.");
     });
+
+    return apiCallReturn;
 }
 
 function displayWeather(data){
