@@ -10,7 +10,7 @@ body{
 }
 
 .wrapper{
-    background:rgb(233, 233, 233);
+    background:rgb(219 246 255);
     width:100%;
     height:100vh;
     display:flex;
@@ -43,15 +43,21 @@ body{
 }
 
 .weather-info-wrapper{
+    background:#003953;
+    color:white;
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
     width: 35%;
-    gap: 20px;
-    padding: 4rem 2rem;
+    gap: 15px;
+    padding: 2rem 0;
     margin-bottom: 3rem;
     border-radius: 35px;
-    border: solid grey 2px;
+    border: solid #d28003 2px;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition:ease all 1s;
 }
 
 .weather-info-wrapper h2{
@@ -63,7 +69,7 @@ body{
 }
 
 .weather-info-wrapper img{
-    width:28%;
+    width:45%;
 }
 
 
@@ -84,7 +90,7 @@ input[type="text"]:focus-visible{
 button{
     padding: 0 1rem;
     border: none;
-    background: black;
+    background: #d28003;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -95,4 +101,9 @@ button:hover {
     cursor:pointer;
     background:white;
     color:black;
+}
+
+.error-font{
+    font-size: 1.6rem !important;
+    padding: 0 2rem;
 }
